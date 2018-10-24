@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/dahuiji.css"/>
+	 
+	<body>
+		<div class="main" id="main">
+			<div id="score"></div>
+			<ul class="options" id="options">
+				<li level="100">2</li>
+				<li level="700">2</li>
+				<li level="800">2</li>
+				<li level="1000">2</li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script src="js/public.js"></script>
+<script src="js/gameengine.js"></script>
+<script src="js/myplane.js"></script>
+<script src="js/bullet.js"></script>
+<script src="js/enmey.js"></script>
+
+
+
+<script type="text/javascript">
+	/*
+	分析对象 ： 敌机      战斗机      子弹       游戏引擎  
+	游戏引擎 :
+		main  ul    
+		菜单点击
+		动画飞机   logo    背景移动 
+	敌机 ： 
+		创建  移动  碰撞 爆炸
+	战斗机 ： 
+		创建  移动  开火
+	子弹 ： 
+		创建 移动  碰撞 爆炸
+	*/
+	window.onload = function(){
+		new GageEngine().initMenu();
+	}
+
+</script>
+ 
